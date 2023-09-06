@@ -1,0 +1,266 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+}
+
+.line {
+    border: 3px solid black
+}
+
+.product {
+    box-sizing: border-box;
+    width: 80px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 0px;
+  
+    border-radius: 1px;
+    background-color: yellow;
+
+    font-weight: bold;
+    text-align: center;
+
+    font-size: 15px;
+}
+
+.cart {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    font-size: 15px;
+}
+
+.header {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.cinnamon-roll {
+    display: border-box;
+    width: 406px;
+  
+    margin: auto;
+    padding: 5px;
+
+    font-size: 35px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.cinnamon-roll-pic {    
+    display: block;
+
+    width: 400px;
+    height: auto;
+   
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    margin-bottom: 5px;
+
+    background-color: black;
+}
+
+.roll-product:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.cinnamon-roll-2 {
+    box-sizing: border-box;
+    width: 600px;
+  
+    margin-top: 5px;
+    padding: 5px;
+
+    margin: auto;
+}
+
+.cinnamon-roll-pic-2 {
+    display: block;
+    width: 600px;
+    height: auto;
+
+    margin: auto;
+   
+    padding: 3px;
+
+    background-color: black;
+}
+
+.description {
+    box-sizing: block;
+    width: 260px;
+    padding: 20px;
+
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.drop-down {
+    display: block;
+    width: 260px;
+    margin: auto;
+}
+
+select {
+    width: 260px;
+    height: 40px;
+    font-size: 18px;
+    text-indent: 8px;
+}
+
+#drop-down {
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+
+    margin: auto;
+    margin-top: 50px;
+}
+
+.price {
+    display: block;
+    width: 120px;
+
+    text-align: center;
+    margin: auto;
+}
+
+.cart-button {
+    display: block;
+    width: 120px;
+    height: 25px;
+
+    font-weight: bold;
+    text-align: center;
+  
+    margin-left: auto; 
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 3px;
+
+    background-color: yellow;
+}
+
+.product-2 {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    font-size: 15px;
+  
+    margin-top: 5px;
+}
+
+.cart-2 {
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 0px;
+  
+    border-radius: 1px;
+    background-color: yellow;
+
+    font-weight: bold;
+    text-align: center;
+
+    font-size: 15px;
+}
+
+.cinnamon-roll-3 {
+    box-sizing: border-box;
+    width: 600px;
+  
+    margin-top: 5px;
+    padding: 5px;
+    margin: auto;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cinnamon-roll-pic-3 {
+    display: block;
+    width: 200px;
+    height: auto;
+
+    margin: auto;
+    margin-bottom: 10px;
+   
+    padding: 3px;
+
+    background-color: black;
+}
+
+.cinnamon-roll-description {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.price {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.line-2 {
+    border: 2px solid black;
+    margin: auto;
+    width: 600px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.checkout-button {
+    display: block;
+    width: 120px;
+
+    font-weight: bold;
+    text-align: center;
+  
+    margin: auto; 
+    padding: 8px;
+
+    border-style: solid;
+    border-width: 3px;
+
+    background-color: yellow;
+}
