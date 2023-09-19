@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `https://ameliaaustin.github.io/pui-homework-template/solution-hw2/index.html`
+Deployed website: `https://ameliaaustin.github.io/pui-homework-template/'
 
-Repository link: `https://ameliaaustin.github.io/pui-homework-template/`
+Repository link: `https://github.com/ameliaaustin/pui-homework-template`
