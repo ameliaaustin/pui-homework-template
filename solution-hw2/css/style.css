@@ -16,7 +16,7 @@ body {
 }
 
 .product {
-    box-sizing: block;
+    box-sizing: content-box;
     width: 140px;
   
     margin-top: 40px;
@@ -43,7 +43,7 @@ body {
 }
 
 .product-cart {
-    box-sizing: block;
+    box-sizing: content-box;
   
     margin-top: 40px;
     margin-left: auto;
@@ -78,7 +78,7 @@ body {
 }
 
 .cinnamon-roll {
-    display: border-box;
+    display: block;
     width: 291px;
   
     margin: 0 auto;
@@ -116,7 +116,7 @@ a:visited {
 }
 
 .cinnamon-roll-2 {
-    box-sizing: block;
+    display: flex;
     width: 60%;
 }
 
@@ -132,7 +132,7 @@ a:visited {
 }
 
 .description {
-    box-sizing: block;
+    box-sizing: content-box;
     padding: 15px;
 
     font-size: 27px;
@@ -325,10 +325,6 @@ select {
     column-gap: 10px;
 }
 
-.flex-cinnamon-roll {
-    display: flex;
-}
-
 .product-detail {
     display: flex;
     justify-content: center;
@@ -346,10 +342,6 @@ select {
     font-size: 20px;
 }
 
-.remove {
-    width: 200px;
-}
-
 .item-descriptor {
     display: flex;
     flex-direction: column;
@@ -359,9 +351,3 @@ select {
 
     margin-right: auto;
 }
-
-.cart-box {
-    flex-direction: column;
-    column-gap: 10px;
-}
-
