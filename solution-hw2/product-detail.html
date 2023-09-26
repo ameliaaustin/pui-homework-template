@@ -15,10 +15,11 @@
       rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="random-element.js"></script>
   
   </head>
   
-  <body>
+  <body onload="loadOptions()">
 
     <div class="product-gallery">
         
@@ -59,28 +60,20 @@
           <div class="drop-down">
             Glazing:
             <br>
-            <select name="glazing" id="drop-down-1">
-            <option value="Keep original">Keep original</option>
-            <option value="Sugar milk">Sugar milk</option>
-            <option value="Vanilla milk">Vanilla milk</option>
-            <option value="Double chocolate">Double chocolate</option>
+            <select name="glazing" id="glazingOptions" onchange="glazingChange(this)">
             </select>
           </div>
 
           <div class="drop-down">
               Pack Size:
               <br>
-              <select name="pack-size" id="drop-down-2">
-              <option value="1">1</option>
-              <option value="3">3</option>
-              <option value="6">6</option>
-              <option value="12">12</option>
+              <select name="pack-size" id="packSizeOptions" onchange="packChange(this)">
               </select>
           </div>
 
           <div class="container">
-            <div class="price">
-              $2.49
+            <div class="price" id="price">
+              <text>$2.49</text>
             </div>
 
             <div class="cart-button">

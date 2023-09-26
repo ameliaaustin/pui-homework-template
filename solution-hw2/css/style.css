@@ -173,19 +173,20 @@ select {
 
     text-align: center;
     margin: auto;
+    margin-right: 30px;
     font-size: 30px;
 }
 
 .cart-button {
     display: block;
-    width: 150px;
+    width: 120px;
     height: 25px;
 
     font-weight: bold;
     font-size: 20px;
     text-align: center;
   
-    margin-left: 50px; 
+    /* margin-left: 40px;  */
     padding: 10px;
 
     border-style: solid;
@@ -262,6 +263,7 @@ select {
 .line-2 {
     border: 2px solid black;
     width: 700px;
+    margin-right: 80px;
 }
 
 .total-bar {
@@ -271,6 +273,7 @@ select {
     margin: auto;
     margin-top: 25px;
     margin-bottom: 15px;
+    margin-right: 80px;
 }
 
 .total {
@@ -290,7 +293,7 @@ select {
     text-align: center;
   
     margin: auto; 
-    margin-right: 240px;
+    margin-right: 80px;
     margin-top: 20px;
     padding: 8px;
 
@@ -338,6 +341,7 @@ select {
     justify-content: space-evenly;
     align-items: center;    
     margin: auto;
+    margin-right: 80px;
     text-align: left;
     font-size: 20px;
 }
