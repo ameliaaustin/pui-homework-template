@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 
   <head>
     <meta charset="UTF-8">
@@ -15,11 +14,12 @@
       rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="random-element.js"></script>
+    <script src="select-changes.js"></script>
+    <script src="rollsData.js"></script>
   
   </head>
   
-  <body onload="loadOptions()">
+  <body onload="loadInfo(); loadOptions() ">
 
     <div class="product-gallery">
         
@@ -39,7 +39,7 @@
               
           <hr class="line">
           
-          <p class="header">
+          <p class="header" id="title">
             Original cinnamon roll
           </p>
         </div>
@@ -49,7 +49,7 @@
 
       <div class="product-detail">
         <div class="cinnamon-roll-2">
-          <img class="cinnamon-roll-pic-2" src="images/original-cinnamon-roll.jpg" alt="Cinnamon Roll Picture" width="600">           
+          <img class="cinnamon-roll-pic-2" id ="roll" src="images/original-cinnamon-roll.jpg" alt="Cinnamon Roll Picture" width="600">           
         </div>
             
         <div class="column-container-detail">
@@ -72,12 +72,13 @@
           </div>
 
           <div class="container">
-            <div class="price" id="price">
-              <text>$2.49</text>
+            <div class="price" >
+              <text id="price">$2.49</text>
             </div>
 
             <div class="cart-button">
-              <a href="./shopping-cart.html">Add to Cart</a>
+              <!-- <a href="./shopping-cart.html" onchange="addCart(this)"> Add to Cart</a> -->
+              <text onclick="addCart()"> Add to Cart </text>
             </div>
           </div>
         </div>

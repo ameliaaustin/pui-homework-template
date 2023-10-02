@@ -1,6 +1,6 @@
-var basePrice = 2.49
 var packPrice = 1
 var glazingPrice = 0
+var basePrice = 0
 
 const allGlazings = [
     {
@@ -58,6 +58,8 @@ function loadOptions() {
         opt.innerHTML = pack.name
         selectPackSize.appendChild(opt)
     })
+
+    basePrice = document.getElementById("price").innerHTML.slice(1) * 1
 
 }
 
