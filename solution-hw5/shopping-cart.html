@@ -15,10 +15,11 @@
       rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="cart.js"></script>
   
   </head>
 
-  <body>
+  <body >
     <div class="shopping-cart">
       <div class="header-container">
         <a href="./index.html"><img class="logo" src="images/logo-01.svg" alt="Bun Bun Logo"></a>
@@ -45,32 +46,32 @@
   
     <br>
     
-    <div class="cart-display">
-      <div class="cinnamon-roll-description">
-        <div class="cinnamon-roll-3">
-          <img class="cinnamon-roll-pic-3" src="images/original-cinnamon-roll.jpg" alt="Cinnamon Roll Picture" width="200">  
-          Remove
-        </div>       
-      </div>
+    <template>
+      <div class="cart-display">
+        <div class="cinnamon-roll-description">
+          <div class="cinnamon-roll-3">
+            <img class="cinnamon-roll-pic-3" src="images/original-cinnamon-roll.jpg" alt="Cinnamon Roll Picture" width="200">  
+            Remove
+          </div>       
+        </div>
 
-      <div class="item-descriptor">
-        <div>
-          Original Cinnamon Roll
+        <div class="item-descriptor">
+          <div>
+            Original Cinnamon Roll
+          </div>
+          <div>
+            Glazing: Keep original
+          </div>
+          <div>
+            Pack Size: <template> class="pack" </template>
+          </div>
         </div>
-        <div>
-          Glazing: Keep original
-        </div>
-        <div>
-          Pack Size: 1
+      
+        <div class="price-1">
         </div>
       </div>
-    
-      <div class="price-1">
-        $ 2.49
-      </div>
-    </div>
-            
-    <div class="cart-display">
+    </template>       
+    <!-- <div class="cart-display">
       <div class="cinnamon-roll-description">
         <div class="cinnamon-roll-3">
           <img class="cinnamon-roll-pic-3" src="images/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll Picture" width="200">  
@@ -93,7 +94,7 @@
       <div class="price-1">    
         $ 27.45
       </div>
-    </div>
+    </div> -->
             
     <hr class="line-2">
     
