@@ -247,7 +247,6 @@ select {
 }
 
 .cinnamon-roll-description {
-    display: flex;
     text-align: left;
     font-size: 20px;
 }
@@ -280,7 +279,9 @@ select {
 }
 
 .final-price {
+    display: block;
     width: 10%;
+    margin-top: 0px;
 }
 
 .checkout-button {
@@ -348,9 +349,14 @@ select {
 .item-descriptor {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: flex-start;
     height: 200px;
 
     margin-right: auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.item-descriptor p {
+    margin: 10px;
 }
