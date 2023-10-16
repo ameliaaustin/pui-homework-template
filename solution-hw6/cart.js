@@ -1,5 +1,5 @@
 // cart set
-const cart = new Set()
+let cart = new Set()
 
 // roll class
 class Roll {
@@ -8,6 +8,19 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
+    }
+}
+
+// pulls cart from local storage and converts it to a set
+function rollLocalStorage() {
+    const cartJson = localStorage.getItem("cart");
+    
+    if (cartJson !== null) {
+        const cartArray = JSON.parse(cartJson);
+        cart = new Set(cartArray);
+    }
+    else {
+        cart = new Set();
     }
 }
 
@@ -49,54 +62,11 @@ const allPack = {
 
 // dictionary to track glasing with price change
 const allGlazing = {
-    "Keep Original" : 0.0,
-    "Sugar Milk" : 0.0,
-    "Vanilla Milk" : 0.50,
-    "Double Chocolate" : 1.50
+    "Keep original" : 0.0,
+    "Sugar milk" : 0.0,
+    "Vanilla milk" : 0.50,
+    "Double chocolate" : 1.50
 }
-
-// creating roll one from data given
-const rollOne = new Roll(
-    'Original',
-    'Sugar Milk',
-    '1',
-    '$2.49',
-)
-
-// creating roll two from data given
-const rollTwo = new Roll(
-    'Walnut',
-    'Vanilla Milk',
-    '12',
-    '$39.90',
-)
-
-// creating roll three from data given
-const rollThree = new Roll(
-    'Raisin',
-    'Sugar Milk',
-    '3',
-    '$8.97',
-)
-
-// creating roll four from data given
-const rollFour = new Roll(
-    'Apple',
-    'Keep Original',
-    '3',
-    '$10.47',
-)
-
-// function to add rolls to cart
-function addCart(roll) {  
-    cart.add(roll);
-}
-
-// calling function to add each roll to cart
-addCart(rollOne);
-addCart(rollTwo);
-addCart(rollThree);
-addCart(rollFour);
 
 // dynamically calculates the cost of each roll element being created
 function calculateCost(roll) {
@@ -205,16 +175,22 @@ function removeClickHandler(roll) {
 }
 
 // recreates the cart without the deleted roll information and without the old total price
+// converts set to array and stores the updated cart in local storage
 function rerender(cart) {
+    const cartArray = Array.from(cart);
+    const cartJSON = JSON.stringify(cartArray);
+    localStorage.setItem("cart", cartJSON);
     const container = document.getElementById("cart-container"); 
     container.innerHTML = '';
     const container2 = document.getElementById("final-price"); 
     container2.innerHTML = '';
+    console.log(localStorage.getItem("cart"));
     displayCart(cart)
     displayTotalPrice()
 }
 
-// displays the cart and total price when page is rendered
+// displays the cart and total price when page is rendered and updates local storage
+rollLocalStorage()
 displayCart(cart)
 displayTotalPrice()
 

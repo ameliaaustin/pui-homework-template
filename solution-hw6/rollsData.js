@@ -26,7 +26,20 @@ const rolls = {
 }
 
 // cart array
-const cart = []
+let cart = []
+
+// pulls cart from local storage and parses it
+function rollLocalStorage() {
+    const cartJSON = localStorage.getItem("cart");
+    if (cartJSON !== null) {
+        //let convert = JSON.parse(cartJSON);
+        //cart = Array.from(convert);
+        cart = JSON.parse(cartJSON)
+    }
+    else {
+        cart = [];
+    }
+}
 
 // updating image and title information on product detail page
 function loadInfo() {
@@ -75,6 +88,11 @@ function addCart() {
     // creates that information into an element and pushes it into the cart array
     const roll = new Roll(rollType, rollGlazing, packSize, price)
     cart.push(roll);
+    // converts the cart to JSON file and puts it in local storage
+    const cartJSON = JSON.stringify(cart);
+    localStorage.setItem("cart", cartJSON);
     // prints roll information
-    console.log(cart);
+    console.log(localStorage.getItem("cart"));
 }
+
+  
